@@ -16,6 +16,13 @@ a{
     color: white;
 }
 
+input, 
+button{
+    border: none;
+    font: inherit;
+}
+
+
 
 
 /* keyframes  */
@@ -36,6 +43,12 @@ a{
 
 
 /* base styles  */
+
+
+html{
+    --accent-color:#88a9f4;
+    --accent-color-dark: rgb(106, 137, 237);
+}
 
 body{
     font-family: 'Poppins' sans-serif;
@@ -112,4 +125,125 @@ nav{
     margin-bottom: 35px;
     box-shadow: 0 4px 44px rgba(0, 0, 0, .7);
     animation: fade-in 0.4s;
+    overflow: hidden;
+}
+
+
+/* main section  */
+
+.intro{
+    width: 100%;
+    height: 500px;
+    display: flex;    
+
+}
+
+.search{
+
+    background-color: #d2d9eb;
+    flex: 1;
+    /* height: 80%; */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.first-heading{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 1.1;
+    max-width: 320px;
+}
+
+.emphasis{
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.form{
+    width: 380px;
+    position: relative;
+  
+}
+
+.input{
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.input:active{
+    border: none;
+}
+
+.input::placeholder{
+    padding-left: 40px;
+}
+
+.input-icon{
+
+    color: rgb(116, 114, 114);
+    position: absolute;
+    top: 15px;
+
+}
+
+.input-icon:nth-of-type(1){
+    top: 22px;
+    left: 10px;
+}
+
+.input-icon:nth-of-type(2){
+    top: 92px;
+    left: 10px;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--accent-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--accent-color-dark);
+}
+.photos{
+    flex: 1.5;
+    display: flex;
+    flex-direction: row;
+
+   
+
+    
+    
+    /* height: 300px;
+    height: 450px; */
+
+}
+
+.photo-1{
+    /* display: block; */
+    width: 100%;
+
+}
+
+.photo-2{
+    /* display: block; */
+    width: 100%;
+    
 }
