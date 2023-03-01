@@ -157,6 +157,7 @@ nav{
     margin-bottom: 30px;
     line-height: 1.1;
     max-width: 320px;
+    overflow: hidden;
 }
 
 .emphasis{
@@ -175,11 +176,13 @@ nav{
     height: 60px;
     width: 100%;
     margin-bottom: 10px;
+    border-color: transparent;
 }
 
-.input:active{
-    border: none;
-}
+/* .input:focus, .input:active{
+    border-color: wheat;
+
+} */
 
 .input::placeholder{
     padding-left: 40px;
@@ -262,6 +265,14 @@ nav{
     color: rgb(86, 87, 90);
     text-transform: capitalize;
     font-weight: 700;
+
+}
+
+.bar{
+    width: 65px;
+    height: 2px;
+    background-color: rgb(105, 105, 172);
+    margin-bottom: 10px;
 }
 
 .steps{
@@ -344,5 +355,47 @@ nav{
     font-size: 14px;
     transition: all 0.4s;
     
+}
+
+/* footer  */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.copyright{
+
+}
+
+.legal-list{
+    display: flex;
+}
+
+.legal-item{
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.legal-item:hover{
+    border-bottom: 1px solid #2740fe;
+}
+
+.legal-link{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #88a9f4;
+    transition: all 0.4s;
+}
+
+.legal-link:hover{
+    color: #2262f9;
+    border-radius: 5px;
+   
 }
 
